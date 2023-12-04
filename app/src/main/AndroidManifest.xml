@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proba_prj"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".konyvek.VODActivity"></activity>
+        <activity android:name=".konyvek.LYDActivity" />
+        <activity android:name=".konyvek.RWRActivity" />
+        <activity android:name=".listaosztalyok.Tobb"/>
+        <activity android:name=".listaosztalyok.Tobb_kat"/>
+        <activity android:name=".payment.Payment"/>
+        <activity android:name=".DisplayActivity"/>
+
+    </application>
+
+</manifest>

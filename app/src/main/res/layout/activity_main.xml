@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd9e4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/kerekitett_kep"
+        android:layout_width="106dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/round_image"
+        android:clickable="true"
+        android:contentDescription="@string/vow_of_deception"
+        android:onClick="keprekattintva"
+        android:scaleType="fitXY"
+        android:src="@drawable/kep1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <ImageView
+        android:id="@+id/kerekitett_kep2"
+        android:layout_width="106dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/round_image"
+        android:clickable="true"
+        android:contentDescription="@string/red_white_and_royal_blue"
+        android:onClick="kepkatt"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <ImageView
+        android:id="@+id/kerekitett_kep3"
+        android:layout_width="106dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/round_image"
+        android:clickable="true"
+        android:contentDescription="love you deserve"
+        android:scaleType="fitXY"
+        android:src="@drawable/love"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kerekitett_kep2"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <View
+        android:id="@+id/nagy_alakzat"
+        android:layout_width="380dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toTopOf="@+id/kerekitett_kep3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/medium_alakzat"
+        android:layout_width="188dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shape_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/nagy_alakzat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/kicsi_alakzat"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_little"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@+id/nagy_alakzat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/uj"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="#FFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/nepszeru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:text="@string/n_pszer_ek"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kovetkezogomb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <TextView
+        android:id="@+id/kategoria"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:text="Kategóriák"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kovetkezogomb_masodik"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/kovetkezogomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:text="Több..."
+        android:textColor="#004AAD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/kovetkezogomb_masodik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:onClick="kategoriak"
+        android:text="Több..."
+        android:textColor="#004AAD"
+        app:layout_constraintBottom_toBottomOf="@+id/horror"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <ImageView
+        android:id="@+id/comic"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="290dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/comic" />
+
+    <ImageView
+        android:id="@+id/romantic"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="290dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comic"
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@drawable/million_kisses" />
+
+    <ImageView
+        android:id="@+id/science"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comic"
+        app:layout_constraintVertical_bias="0.27"
+        app:srcCompat="@drawable/science" />
+
+    <ImageView
+        android:id="@+id/thriller"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comic"
+        app:layout_constraintVertical_bias="0.27"
+        app:srcCompat="@drawable/thriller" />
+
+    <ImageView
+        android:id="@+id/fantasy"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep3"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/fantasy" />
+
+    <ImageView
+        android:id="@+id/horror"
+        android:layout_width="82dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep2"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/horror" />
+
+
+    <TextView
+        android:id="@+id/elsocim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="290dp"
+        android:text="Vow of Deception"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/masodikcim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:text="Love you deserve"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/harmadikcim"
+        android:layout_width="94dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:text="Red white and royal blue"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kerekitett_kep"
+        app:layout_constraintVertical_bias="0.27"
+        tools:ignore="TextSizeCheck" />
+
+    <RatingBar
+        android:id="@+id/rating_elso"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="216dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@android:color/holo_orange_dark"
+
+        android:rating="4"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:stepSize="1"
+
+        android:transformPivotX="120dp"
+        android:transformPivotY="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <RatingBar
+        android:id="@+id/rating_masoik"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="80dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/black"
+
+        android:progressTint="@android:color/holo_orange_dark"
+        android:rating="3"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+
+        android:stepSize="1"
+        android:transformPivotX="120dp"
+        android:transformPivotY="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <RatingBar
+        android:id="@+id/rating_harmadik"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="-52dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/black"
+
+        android:progressTint="@android:color/holo_orange_dark"
+        android:rating="5"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+
+        android:stepSize="1"
+        android:transformPivotX="120dp"
+        android:transformPivotY="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/comic_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="200dp"
+        android:text="Comic"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/fantasy_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="200dp"
+        android:text="Fantasy"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/horror_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="200dp"
+        android:text="Horror"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/romantic_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="300dp"
+        android:text="Romantic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/romantic"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/science_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
+        android:text="Tudományos"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/science"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/thriller_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="30dp"
+        android:text="Thriller"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thriller"
+        app:layout_constraintVertical_bias="0.104" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigacio"
+        android:layout_width="423dp"
+        android:layout_height="58dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:menu="@menu/button_nav">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

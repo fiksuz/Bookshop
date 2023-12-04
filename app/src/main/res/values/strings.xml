@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">proba_prj</string>
+    <string name="vow_of_deception">Vow of deception</string>
+    <string name="welcome">Welcome</string>
+    <string name="n_pszer_ek">Népszerűek</string>
+    <string name="red_white_and_royal_blue">red white and royal blue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
